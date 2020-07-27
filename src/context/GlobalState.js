@@ -8,8 +8,8 @@ export const GlobalState = (props) => {
   const range = useRef()
 
   useEffect(() => {
-    // initial card numbers range
-    range.current = setRange(20, 25)
+    // initial card numbers range, eg. setRange(20, 25)
+    range.current = setRange()
   }, [])
 
   const addCard = () => {
