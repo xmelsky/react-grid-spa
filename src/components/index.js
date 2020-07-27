@@ -1,7 +1,0 @@
-export * from './header'
-export * from './button'
-export * from './main'
-export * from './card-list'
-export * from './card'
-export * from './aside'
-export * from './footer'
