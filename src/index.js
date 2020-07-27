@@ -1,5 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from "./App";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { GlobalState } from './context'
 
-ReactDOM.render( <App/>, document.getElementById('root') );
+import '../node_modules/normalize-css/normalize.css'
+
+import App from './App'
+import './index.scss'
+
+ReactDOM.render(
+  <GlobalState>
+    <App />
+  </GlobalState>,
+  document.getElementById('root')
+)

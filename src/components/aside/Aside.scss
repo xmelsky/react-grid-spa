@@ -1,0 +1,28 @@
+.instructions {
+  overflow-y: scroll;
+  background-color: rgba(2, 137, 195, 0.32);
+  height: 100vh;
+  width: 30rem;
+  padding: 1rem;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #028bc6;
+    border-radius: 10px;
+  }
+
+  & .instructions__text {
+    font-weight: 300;
+  }
+
+  @media screen and (max-width: 414px) {
+    & {
+      display: none;
+    }
+  }
+}
